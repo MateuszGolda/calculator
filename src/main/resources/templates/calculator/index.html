@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+<form method="post">
+    <label for="input1">Number 1:</label><br/>
+    <input type="text" id="input1" name="input1"/><br/>
+    <label for="operation">Operation:</label><br/>
+    <input type="text" id="operation" name="operation"/><br/>
+    <label for="input2">Number 2:</label><br/>
+    <input type="text" id="input2" name="input2"/><br/>
+    <input type="submit" name="Submit"/><br/>
+</form>
+
+<p th:text="${result}"></p>
+
+</body>
+</html>
